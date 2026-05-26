@@ -1,45 +1,42 @@
 <p align="center">
-  <img src="banner.svg" alt="Profile Banner" />
+  <img src="banner.svg" alt="Profile Banner" height="180"/>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=22&center=true&vCenter=true&width=700&lines=Backend+Engineer;Java+%7C+Spring+Boot+%7C+Microservices;Building+Scalable+Backend+Systems" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=20&center=true&vCenter=true&width=650&lines=Backend+Engineer;Java+%7C+Spring+Boot+%7C+Microservices;Scalable+System+Design+Enthusiast" />
 </p>
 
 ---
 
 ## 👨‍💻 Backend Engineer | Java | Spring Boot | Microservices
 
-Building scalable and secure backend systems with clean architecture principles.
+> Building scalable, secure, and high-performance backend systems with clean architecture.
 
 ---
 
 ## ⚙️ Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,mysql,postgres,docker,git,kafka,redis" />
+  <img src="https://skillicons.dev/icons?i=java,spring,mysql,postgres,docker,git,kafka,redis" height="40"/>
 </p>
 
 ---
 
 ## 💡 What I Do
 
-- Build scalable REST APIs using Spring Boot  
-- Design secure authentication & authorization systems  
-- Work with relational databases and caching systems  
-- Develop backend systems with clean architecture principles  
-- Focus on performance and maintainability  
+- ⚡ Build high-performance REST APIs with Spring Boot  
+- 🔐 Design secure authentication & authorization systems (JWT, OAuth2)  
+- 🧠 Work with distributed systems, caching & messaging (Redis, Kafka)  
+- 🏗️ Follow clean architecture & microservices patterns  
+- 🚀 Optimize backend systems for scalability & low latency  
 
 ---
 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RajKTH1415&show_icons=true&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=RajKTH1415&theme=tokyonight&hide_border=true" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=RajKTH1415&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="160" src="https://github-readme-streak-stats.herokuapp.com/?user=RajKTH1415&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
@@ -47,17 +44,19 @@ Building scalable and secure backend systems with clean architecture principles.
 ## 📈 Activity Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RajKTH1415&theme=react-dark" />
+  <img height="250" src="https://github-readme-activity-graph.vercel.app/graph?username=RajKTH1415&theme=react-dark" />
 </p>
 
 ---
 
 ## 📫 Connect With Me
 
-- LinkedIn: https://www.linkedin.com/in/rajkumar-prasad-9853b6226/
+<p align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rajkumar-prasad-9853b6226/)
+
+</p>
 
 ---
 
-<!--
-This profile README is designed to present a clean and professional backend engineering identity.
--->
+<!-- Clean, minimal, backend-focused professional profile -->
