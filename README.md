@@ -1,5 +1,11 @@
 ## Hi there 👋
+<p align="center">
+  <img src="banner.svg" alt="Profile Banner" />
+</p>
 
+## Backend Engineer | Java | Spring Boot | Microservices
+
+Building scalable and secure backend systems with clean architecture principles.
 <!--
 **RajKTH1415/RajKTH1415** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
