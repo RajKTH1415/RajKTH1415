@@ -1,0 +1,359 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
+  <defs>
+    <!-- Animated Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#070b17;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#0f1425;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#1a1a3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <animate attributeName="x1" values="0%;100%;0%" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="0%;100%;0%" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;0%;100%" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="100%;0%;100%" dur="20s" repeatCount="indefinite"/>
+    </linearGradient>
+    
+    <!-- Moving Accent Gradient -->
+    <linearGradient id="movingAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00b4d8;stop-opacity:0" />
+      <stop offset="30%" style="stop-color:#00b4d8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7209b7;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#00b4d8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00b4d8;stop-opacity:0" />
+      <animate attributeName="x1" values="-100%;200%" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;300%" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Animated Title Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00b4d8;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#90e0ef;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#90e0ef;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7209b7;stop-opacity:1" />
+      <animate attributeName="x1" values="0%;100%;0%" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;200%;100%" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur1"/>
+      <feGaussianBlur stdDeviation="8" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Animated Background -->
+  <rect width="1500" height="500" fill="url(#bgGrad)" />
+
+  <!-- Animated Floating Orbs -->
+  <circle cx="300" cy="250" r="350" fill="#00b4d8" opacity="0.06" filter="url(#softGlow)">
+    <animate attributeName="cx" values="200;400;200" dur="15s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="250;150;250" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.04;0.1;0.04" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1200" cy="250" r="300" fill="#7209b7" opacity="0.05" filter="url(#softGlow)">
+    <animate attributeName="cx" values="1200;1000;1200" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="250;350;250" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.03;0.08;0.03" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="750" cy="250" r="250" fill="#0077b6" opacity="0.04" filter="url(#softGlow)">
+    <animate attributeName="cx" values="750;850;750" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.03;0.07;0.03" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Animated Grid Pattern -->
+  <g opacity="0.03">
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#00b4d8" stroke-width="0.5">
+        <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+      </path>
+    </pattern>
+    <rect width="1500" height="500" fill="url(#grid)" />
+  </g>
+
+  <!-- Top Animated Accent Line -->
+  <rect x="0" y="0" width="1500" height="3" fill="url(#movingAccent)" opacity="0.9"/>
+
+  <!-- Animated Circuit Lines - Left -->
+  <g opacity="0.35">
+    <path d="M0 380 L80 380 L120 340 L160 340 L200 300 L240 300 L260 280" stroke="#00b4d8" stroke-width="1.5" fill="none">
+      <animate attributeName="stroke-opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="260" cy="280" r="4" fill="#00b4d8" filter="url(#neonGlow)">
+      <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M0 420 L100 420 L140 380 L180 380 L220 340" stroke="#7209b7" stroke-width="1.2" fill="none">
+      <animate attributeName="stroke-opacity" values="0.2;0.6;0.2" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="220" cy="340" r="2.5" fill="#7209b7">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Animated Circuit Lines - Right -->
+  <g opacity="0.35">
+    <path d="M1500 140 L1420 140 L1380 180 L1340 180 L1300 220 L1260 220 L1240 240" stroke="#00b4d8" stroke-width="1.5" fill="none">
+      <animate attributeName="stroke-opacity" values="0.2;0.8;0.2" dur="4.5s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="1240" cy="240" r="4" fill="#00b4d8" filter="url(#neonGlow)">
+      <animate attributeName="r" values="3;6;3" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M1500 160 L1380 160 L1340 200 L1300 200 L1260 240" stroke="#7209b7" stroke-width="1.2" fill="none">
+      <animate attributeName="stroke-opacity" values="0.2;0.6;0.2" dur="5.5s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="1260" cy="240" r="2.5" fill="#7209b7">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Animated Hero Icons Row -->
+  <g transform="translate(180, 130)" opacity="0.8">
+    <!-- Java -->
+    <g transform="translate(0, 0)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="3.5s" repeatCount="indefinite"/>
+      <rect x="0" y="10" width="28" height="20" rx="4" fill="none" stroke="#90e0ef" stroke-width="1.5"/>
+      <path d="M28 15 Q35 15 35 20 Q35 25 28 25" fill="none" stroke="#90e0ef" stroke-width="1.5"/>
+      <line x1="8" y1="6" x2="10" y2="10" stroke="#90e0ef" stroke-width="1.2"/>
+      <line x1="14" y1="5" x2="15" y2="10" stroke="#90e0ef" stroke-width="1.2"/>
+      <line x1="20" y1="6" x2="19" y2="10" stroke="#90e0ef" stroke-width="1.2"/>
+    </g>
+    <!-- Spring Boot -->
+    <g transform="translate(80, -2)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="4s" repeatCount="indefinite" begin="0.3s"/>
+      <path d="M14 5 Q18 8 16 14 Q15 12 14 12 Q12 12 12 14 Q10 8 14 5Z" fill="none" stroke="#90e0ef" stroke-width="1.5"/>
+      <path d="M14 5 Q10 10 10 14 Q12 12 14 12" fill="none" stroke="#90e0ef" stroke-width="1.2"/>
+      <circle cx="14" cy="5" r="1.8" fill="#90e0ef">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <!-- API -->
+    <g transform="translate(160, 0)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="4.5s" repeatCount="indefinite" begin="0.6s"/>
+      <path d="M5 8 L8 12 L5 16" fill="none" stroke="#90e0ef" stroke-width="1.5"/>
+      <path d="M19 8 L16 12 L19 16" fill="none" stroke="#90e0ef" stroke-width="1.5"/>
+      <line x1="12" y1="6" x2="12" y2="18" stroke="#90e0ef" stroke-width="1.2"/>
+    </g>
+    <!-- Database -->
+    <g transform="translate(240, 0)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="5s" repeatCount="indefinite" begin="1s"/>
+      <ellipse cx="12" cy="8" rx="10" ry="4" fill="none" stroke="#90e0ef" stroke-width="1.2"/>
+      <path d="M2 8 L2 16 Q2 20 12 20 Q22 20 22 16 L22 8" fill="none" stroke="#90e0ef" stroke-width="1.2"/>
+      <line x1="2" y1="12" x2="22" y2="12" stroke="#90e0ef" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Central Line Separator -->
+  <g opacity="0.6">
+    <line x1="580" y1="145" x2="920" y2="145" stroke="url(#movingAccent)" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <circle cx="580" cy="145" r="3" fill="#00b4d8" filter="url(#neonGlow)">
+      <animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="145" r="2" fill="#90e0ef">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="920" cy="145" r="3" fill="#7209b7" filter="url(#neonGlow)">
+      <animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite" begin="0.8s"/>
+    </circle>
+  </g>
+
+  <!-- Right Side Icons (Mirrored) -->
+  <g transform="translate(1080, 130)" opacity="0.8">
+    <g transform="translate(0, 0)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="3.8s" repeatCount="indefinite" begin="0.2s"/>
+      <ellipse cx="12" cy="8" rx="10" ry="4" fill="none" stroke="#90e0ef" stroke-width="1.2"/>
+      <path d="M2 8 L2 16 Q2 20 12 20 Q22 20 22 16 L22 8" fill="none" stroke="#90e0ef" stroke-width="1.2"/>
+      <line x1="2" y1="12" x2="22" y2="12" stroke="#90e0ef" stroke-width="1"/>
+    </g>
+    <g transform="translate(70, -2)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="4.2s" repeatCount="indefinite" begin="0.5s"/>
+      <path d="M5 8 L8 12 L5 16" fill="none" stroke="#90e0ef" stroke-width="1.5"/>
+      <path d="M19 8 L16 12 L19 16" fill="none" stroke="#90e0ef" stroke-width="1.5"/>
+      <line x1="12" y1="6" x2="12" y2="18" stroke="#90e0ef" stroke-width="1.2"/>
+    </g>
+    <g transform="translate(150, -2)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="4.7s" repeatCount="indefinite" begin="0.9s"/>
+      <path d="M14 5 Q18 8 16 14 Q15 12 14 12 Q12 12 12 14 Q10 8 14 5Z" fill="none" stroke="#90e0ef" stroke-width="1.5"/>
+      <path d="M14 5 Q10 10 10 14 Q12 12 14 12" fill="none" stroke="#90e0ef" stroke-width="1.2"/>
+    </g>
+    <g transform="translate(230, 0)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="5.2s" repeatCount="indefinite" begin="1.2s"/>
+      <rect x="0" y="10" width="28" height="20" rx="4" fill="none" stroke="#90e0ef" stroke-width="1.5"/>
+      <path d="M28 15 Q35 15 35 20 Q35 25 28 25" fill="none" stroke="#90e0ef" stroke-width="1.5"/>
+      <line x1="8" y1="6" x2="10" y2="10" stroke="#90e0ef" stroke-width="1.2"/>
+      <line x1="14" y1="5" x2="15" y2="10" stroke="#90e0ef" stroke-width="1.2"/>
+      <line x1="20" y1="6" x2="19" y2="10" stroke="#90e0ef" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- Main Title - Backend Engineer with Beautiful Animated Gradient -->
+  <text x="750" y="240" text-anchor="middle" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="72" font-weight="800" fill="url(#titleGrad)" letter-spacing="4" filter="url(#strongGlow)">
+    Backend Engineer
+  </text>
+  
+  <!-- Animated glowing underline -->
+  <rect x="420" y="260" width="660" height="4" rx="2" fill="url(#movingAccent)" opacity="0.7" filter="url(#neonGlow)">
+    <animate attributeName="width" values="0;660;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Decorative code brackets around title -->
+  <text x="170" y="233" font-family="monospace" font-size="28" fill="#00b4d8" opacity="0.5" font-weight="300" filter="url(#neonGlow)">
+    &lt;/&gt;
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </text>
+  <text x="1280" y="233" font-family="monospace" font-size="28" fill="#00b4d8" opacity="0.5" font-weight="300" text-anchor="end" filter="url(#neonGlow)">
+    &lt;/&gt;
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.5s" repeatCount="indefinite" begin="1.3s"/>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="750" y="310" text-anchor="middle" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="500" fill="#90e0ef" letter-spacing="2" opacity="0.9">
+    Java | Spring Boot | Microservices | API
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Secondary Tagline -->
+  <text x="750" y="350" text-anchor="middle" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#8d99ae" letter-spacing="1">
+    Building scalable backend systems with clean architecture
+  </text>
+
+  <!-- Animated blinking cursor -->
+  <text x="1105" y="350" font-family="monospace" font-size="18" fill="#00b4d8" opacity="0.9" filter="url(#neonGlow)">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    █
+  </text>
+
+  <!-- Bottom Decorative Line -->
+  <g opacity="0.6">
+    <rect x="520" y="395" width="460" height="2" rx="1" fill="url(#movingAccent)"/>
+    <circle cx="520" cy="396" r="3" fill="#00b4d8" filter="url(#neonGlow)">
+      <animate attributeName="cx" values="520;540;520" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="396" r="2" fill="#90e0ef">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="980" cy="396" r="3" fill="#7209b7" filter="url(#neonGlow)">
+      <animate attributeName="cx" values="980;960;980" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Animated Terminal Lines -->
+  <text x="50" y="470" font-family="'Fira Code', 'Courier New', monospace" font-size="12" fill="#0077b6" opacity="0.7">
+    <tspan font-weight="bold" fill="#00b4d8">$</tspan> whoami
+  </text>
+  <text x="50" y="488" font-family="'Fira Code', 'Courier New', monospace" font-size="11" fill="#0096c7" opacity="0.5">
+    backend-engineer@production:~<tspan font-weight="bold" fill="#00b4d8">█</tspan>
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="1400" y="470" font-family="'Fira Code', 'Courier New', monospace" font-size="12" fill="#0077b6" opacity="0.7" text-anchor="end">
+    <tspan font-weight="bold" fill="#00b4d8">$</tspan> ./deploy --prod --arch=clean
+  </text>
+  <text x="1400" y="488" font-family="'Fira Code', 'Courier New', monospace" font-size="11" fill="#0096c7" opacity="0.5" text-anchor="end">
+    ✅ Build successful | Ready for scale
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Animated Floating Tech Tags -->
+  <g opacity="0.6">
+    <rect x="320" y="410" width="72" height="22" rx="11" fill="#0077b6" opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="356" y="425" text-anchor="middle" font-family="monospace" font-size="11" fill="#90e0ef">RESTful</text>
+    
+    <rect x="415" y="410" width="85" height="22" rx="11" fill="#0096c7" opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4.5s" repeatCount="indefinite" begin="0.5s"/>
+    </rect>
+    <text x="457" y="425" text-anchor="middle" font-family="monospace" font-size="11" fill="#90e0ef">Kafka</text>
+    
+    <rect x="525" y="410" width="90" height="22" rx="11" fill="#7209b7" opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="5s" repeatCount="indefinite" begin="1s"/>
+    </rect>
+    <text x="570" y="425" text-anchor="middle" font-family="monospace" font-size="11" fill="#90e0ef">Docker</text>
+
+    <rect x="870" y="410" width="80" height="22" rx="11" fill="#0096c7" opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4.2s" repeatCount="indefinite" begin="0.3s"/>
+    </rect>
+    <text x="910" y="425" text-anchor="middle" font-family="monospace" font-size="11" fill="#90e0ef">K8s</text>
+    
+    <rect x="975" y="410" width="95" height="22" rx="11" fill="#0077b6" opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4.8s" repeatCount="indefinite" begin="0.8s"/>
+    </rect>
+    <text x="1022" y="425" text-anchor="middle" font-family="monospace" font-size="11" fill="#90e0ef">PostgreSQL</text>
+    
+    <rect x="1095" y="410" width="70" height="22" rx="11" fill="#7209b7" opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3.8s" repeatCount="indefinite" begin="1.2s"/>
+    </rect>
+    <text x="1130" y="425" text-anchor="middle" font-family="monospace" font-size="11" fill="#90e0ef">Redis</text>
+  </g>
+
+  <!-- Animated Floating Particles -->
+  <circle cx="150" cy="200" r="2" fill="#00b4d8" opacity="0.5">
+    <animate attributeName="cy" values="200;170;200" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="420" r="1.5" fill="#90e0ef" opacity="0.4">
+    <animate attributeName="cy" values="420;390;420" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1150" cy="200" r="2" fill="#00b4d8" opacity="0.5">
+    <animate attributeName="cy" values="200;230;200" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1350" cy="430" r="1.5" fill="#90e0ef" opacity="0.4">
+    <animate attributeName="cy" values="430;400;430" dur="6.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="460" r="1.5" fill="#00b4d8" opacity="0.3">
+    <animate attributeName="cx" values="650;680;650" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="850" cy="170" r="1.5" fill="#90e0ef" opacity="0.4">
+    <animate attributeName="cy" values="170;140;170" dur="7.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="80" cy="300" r="1.2" fill="#00b4d8" opacity="0.25">
+    <animate attributeName="cy" values="300;270;300" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1450" cy="370" r="1.5" fill="#90e0ef" opacity="0.3">
+    <animate attributeName="cy" values="370;340;370" dur="8.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="480" cy="180" r="1" fill="#7209b7" opacity="0.35">
+    <animate attributeName="cx" values="480;500;480" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="480" r="1" fill="#0077b6" opacity="0.3">
+    <animate attributeName="cx" values="1050;1020;1050" dur="11s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Scanning Line Effect -->
+  <rect x="0" y="0" width="1500" height="2" fill="#00b4d8" opacity="0.2" filter="url(#neonGlow)">
+    <animate attributeName="y" values="0;500;0" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4;0" dur="10s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bottom Accent Glow -->
+  <rect x="0" y="497" width="1500" height="3" fill="url(#movingAccent)" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>
