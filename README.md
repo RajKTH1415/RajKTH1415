@@ -8,7 +8,7 @@
 Building scalable and secure backend systems with clean architecture principles.
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RajKTH1415&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=RajKTH1415" />
 </p>
 <!--
 **RajKTH1415/RajKTH1415** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
