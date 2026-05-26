@@ -1,6 +1,9 @@
 <p align="center">
   <img src="banner.svg" alt="Profile Banner" />
 </p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=RajKTH1415&show_icons=true&theme=tokyonight" />
+</p>
 
 ## Backend Engineer | Java | Spring Boot | Microservices
 
