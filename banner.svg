@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1928;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a1622;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0077b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00b4d8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0077b6;stop-opacity:0" />
+      <stop offset="20%" style="stop-color:#0077b6;stop-opacity:0.8" />
+      <stop offset="80%" style="stop-color:#00b4d8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00b4d8;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1500" height="500" fill="url(#bgGrad)" />
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03">
+    <line x1="0" y1="0" x2="1500" y2="0" stroke="#00b4d8" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="1500" y2="100" stroke="#00b4d8" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="1500" y2="200" stroke="#00b4d8" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="1500" y2="300" stroke="#00b4d8" stroke-width="0.5"/>
+    <line x1="0" y1="400" x2="1500" y2="400" stroke="#00b4d8" stroke-width="0.5"/>
+    <line x1="0" y1="500" x2="1500" y2="500" stroke="#00b4d8" stroke-width="0.5"/>
+    <line x1="0" y1="0" x2="0" y2="500" stroke="#00b4d8" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="500" stroke="#00b4d8" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="500" stroke="#00b4d8" stroke-width="0.5"/>
+    <line x1="900" y1="0" x2="900" y2="500" stroke="#00b4d8" stroke-width="0.5"/>
+    <line x1="1200" y1="0" x2="1200" y2="500" stroke="#00b4d8" stroke-width="0.5"/>
+    <line x1="1500" y1="0" x2="1500" y2="500" stroke="#00b4d8" stroke-width="0.5"/>
+  </g>
+
+  <!-- Decorative top accent line -->
+  <rect x="0" y="0" width="1500" height="3" fill="url(#accentGrad)" opacity="0.6"/>
+
+  <!-- Left decorative elements - Abstract circuit/flow lines -->
+  <path d="M0 350 L80 350 L120 310 L160 310 L200 270" stroke="#0077b6" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M0 370 L60 370 L100 330 L140 330 L180 290 L220 290" stroke="#00b4d8" stroke-width="1" fill="none" opacity="0.2"/>
+  <circle cx="200" cy="270" r="3" fill="#00b4d8" opacity="0.4"/>
+
+  <!-- Right decorative elements -->
+  <path d="M1500 150 L1420 150 L1380 190 L1340 190 L1300 230" stroke="#0077b6" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M1500 170 L1440 170 L1400 210 L1360 210 L1320 250 L1280 250" stroke="#00b4d8" stroke-width="1" fill="none" opacity="0.2"/>
+  <circle cx="1300" cy="230" r="3" fill="#00b4d8" opacity="0.4"/>
+
+  <!-- Top-right digital dots pattern -->
+  <g opacity="0.15">
+    <circle cx="1400" cy="40" r="1.5" fill="#00b4d8"/>
+    <circle cx="1420" cy="60" r="1" fill="#0077b6"/>
+    <circle cx="1445" cy="35" r="1.5" fill="#00b4d8"/>
+    <circle cx="1460" cy="55" r="1" fill="#0077b6"/>
+    <circle cx="1480" cy="30" r="1.5" fill="#00b4d8"/>
+    <circle cx="1410" cy="80" r="1" fill="#00b4d8"/>
+    <circle cx="1450" cy="75" r="1.5" fill="#0077b6"/>
+    <circle cx="1475" cy="85" r="1" fill="#00b4d8"/>
+    <circle cx="1490" cy="70" r="1.5" fill="#0077b6"/>
+  </g>
+
+  <!-- Icons row - subtle, above text -->
+
+  <!-- Java Icon (coffee cup) -->
+  <g transform="translate(180, 140)" opacity="0.5">
+    <rect x="0" y="10" width="28" height="20" rx="3" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+    <path d="M28 15 Q35 15 35 20 Q35 25 28 25" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+    <line x1="8" y1="6" x2="10" y2="10" stroke="#00b4d8" stroke-width="1.2"/>
+    <line x1="14" y1="5" x2="15" y2="10" stroke="#00b4d8" stroke-width="1.2"/>
+    <line x1="20" y1="6" x2="19" y2="10" stroke="#00b4d8" stroke-width="1.2"/>
+  </g>
+
+  <!-- Spring Boot Icon (leaf) -->
+  <g transform="translate(260, 138)" opacity="0.5">
+    <path d="M14 5 Q18 8 16 14 Q15 12 14 12 Q12 12 12 14 Q10 8 14 5Z" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+    <path d="M14 5 Q10 10 10 14 Q12 12 14 12" fill="none" stroke="#00b4d8" stroke-width="1.2"/>
+    <circle cx="14" cy="5" r="1.5" fill="#00b4d8" opacity="0.6"/>
+  </g>
+
+  <!-- API Icon (brackets/connection) -->
+  <g transform="translate(340, 138)" opacity="0.5">
+    <path d="M5 8 L8 12 L5 16" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+    <path d="M19 8 L16 12 L19 16" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+    <line x1="12" y1="6" x2="12" y2="18" stroke="#00b4d8" stroke-width="1.2"/>
+  </g>
+
+  <!-- Cloud Icon -->
+  <g transform="translate(420, 136)" opacity="0.5">
+    <path d="M6 14 Q6 10 9 9 Q9 6 12 5 Q15 4 17 6 Q19 5 21 7 Q24 7 24 10 Q25 10 25 12 Q25 14 24 14Z" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+  </g>
+
+  <!-- Database Icon -->
+  <g transform="translate(500, 138)" opacity="0.4">
+    <ellipse cx="12" cy="8" rx="10" ry="4" fill="none" stroke="#00b4d8" stroke-width="1.2"/>
+    <path d="M2 8 L2 16 Q2 20 12 20 Q22 20 22 16 L22 8" fill="none" stroke="#00b4d8" stroke-width="1.2"/>
+    <line x1="2" y1="12" x2="22" y2="12" stroke="#00b4d8" stroke-width="1"/>
+  </g>
+
+  <!-- Middle line separator -->
+  <line x1="550" y1="155" x2="950" y2="155" stroke="url(#lineGrad)" stroke-width="1" opacity="0.4"/>
+
+  <!-- Right-side icons mirror -->
+  <g transform="translate(980, 138)" opacity="0.5">
+    <ellipse cx="12" cy="8" rx="10" ry="4" fill="none" stroke="#00b4d8" stroke-width="1.2"/>
+    <path d="M2 8 L2 16 Q2 20 12 20 Q22 20 22 16 L22 8" fill="none" stroke="#00b4d8" stroke-width="1.2"/>
+    <line x1="2" y1="12" x2="22" y2="12" stroke="#00b4d8" stroke-width="1"/>
+  </g>
+
+  <g transform="translate(1050, 136)" opacity="0.5">
+    <path d="M6 14 Q6 10 9 9 Q9 6 12 5 Q15 4 17 6 Q19 5 21 7 Q24 7 24 10 Q25 10 25 12 Q25 14 24 14Z" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+  </g>
+
+  <g transform="translate(1130, 138)" opacity="0.5">
+    <path d="M5 8 L8 12 L5 16" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+    <path d="M19 8 L16 12 L19 16" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+    <line x1="12" y1="6" x2="12" y2="18" stroke="#00b4d8" stroke-width="1.2"/>
+  </g>
+
+  <g transform="translate(1210, 138)" opacity="0.5">
+    <path d="M14 5 Q18 8 16 14 Q15 12 14 12 Q12 12 12 14 Q10 8 14 5Z" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+    <path d="M14 5 Q10 10 10 14 Q12 12 14 12" fill="none" stroke="#00b4d8" stroke-width="1.2"/>
+  </g>
+
+  <g transform="translate(1290, 140)" opacity="0.5">
+    <rect x="0" y="10" width="28" height="20" rx="3" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+    <path d="M28 15 Q35 15 35 20 Q35 25 28 25" fill="none" stroke="#00b4d8" stroke-width="1.5"/>
+    <line x1="8" y1="6" x2="10" y2="10" stroke="#00b4d8" stroke-width="1.2"/>
+    <line x1="14" y1="5" x2="15" y2="10" stroke="#00b4d8" stroke-width="1.2"/>
+    <line x1="20" y1="6" x2="19" y2="10" stroke="#00b4d8" stroke-width="1.2"/>
+  </g>
+
+  <!-- Main Title - Rajkumar Prasad -->
+  <text x="750" y="225" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff" letter-spacing="2" filter="url(#glow)">
+    Rajkumar Prasad
+  </text>
+
+  <!-- Subtitle -->
+  <text x="750" y="280" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#90e0ef" letter-spacing="1">
+    Backend Engineer | Java | Spring Boot | Microservices
+  </text>
+
+  <!-- Secondary line -->
+  <text x="750" y="315" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="300" fill="#6c757d" letter-spacing="0.5">
+    Building scalable backend systems with clean architecture
+  </text>
+
+  <!-- Small accent brackets around subtitle (decorative) -->
+  <text x="280" y="280" text-anchor="middle" font-family="monospace" font-size="18" fill="#0077b6" opacity="0.5">◀</text>
+  <text x="1220" y="280" text-anchor="middle" font-family="monospace" font-size="18" fill="#0077b6" opacity="0.5">▶</text>
+
+  <!-- Bottom decorative line -->
+  <rect x="600" y="350" width="300" height="2" fill="url(#accentGrad)" opacity="0.5"/>
+
+  <!-- Bottom-right subtle terminal line -->
+  <text x="1380" y="470" font-family="'Courier New', monospace" font-size="10" fill="#0077b6" opacity="0.3">
+    $ ./deploy --prod
+  </text>
+
+  <!-- Bottom-left subtle prompt -->
+  <text x="30" y="470" font-family="'Courier New', monospace" font-size="10" fill="#0077b6" opacity="0.3">
+    backend@engineer:~$ █
+  </text>
+
+  <!-- Decorative floating dots -->
+  <circle cx="250" cy="380" r="1" fill="#00b4d8" opacity="0.2"/>
+  <circle cx="280" cy="410" r="0.8" fill="#00b4d8" opacity="0.15"/>
+  <circle cx="1200" cy="390" r="1" fill="#00b4d8" opacity="0.2"/>
+  <circle cx="1250" cy="420" r="0.8" fill="#00b4d8" opacity="0.15"/>
+  <circle cx="750" cy="440" r="0.8" fill="#00b4d8" opacity="0.1"/>
+</svg>
