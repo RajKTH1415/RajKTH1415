@@ -1,4 +1,3 @@
-## Hi there 👋
 <p align="center">
   <img src="banner.svg" alt="Profile Banner" />
 </p>
