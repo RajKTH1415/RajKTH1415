@@ -65,7 +65,7 @@ To become a **high-impact backend engineer** capable of designing systems that s
   <img src="https://skillicons.dev/icons?i=java,spring,mysql,postgres,docker,git,kafka,redis" height="40"/>
 </p> -->
 
-<p align="center"> <img src="https://skillicons.dev/icons?i=java,spring,hibernate,mysql,postgres,mongodb,redis,kafka,docker,kubernetes,git,github,linux,postman" height="40"/> </p>
+<p align="center"> <img src="https://skillicons.dev/icons?i=java,spring,hibernate,mysql,postgres,redis,kafka,docker,git,github,postman" height="40"/> </p>
 
 ---
 
