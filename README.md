@@ -14,7 +14,7 @@
 
 ---
 
-## 👨‍💻 Who I Am (in engineering terms)
+## 👨‍💻 Who I Am 
 
 I am a backend engineer focused on building **real-world, production-grade systems** using Java and Spring Boot.
 
